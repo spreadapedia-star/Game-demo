@@ -1,0 +1,32 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Game Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to the Game Demo!&lt;/h1&gt;
+&lt;p&gt;This is a simple HTML file for a game demonstration.&lt;/p&gt;
+
+&lt;canvas id=&quot;gameCanvas&quot; width=&quot;800&quot; height=&quot;600&quot; style=&quot;border:1px solid #000000;&quot;&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+  // JavaScript game logic will go here
+  const canvas = document.getElementById('gameCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Example: Draw a rectangle
+  ctx.fillStyle = '#FF0000'; // Red color
+  ctx.fillRect(50, 50, 100, 150); // x, y, width, height
+
+  // Example: Draw a circle
+  ctx.beginPath();
+  ctx.arc(200, 200, 50, 0, 2 * Math.PI); // x, y, radius, startAngle, endAngle
+  ctx.fillStyle = '#0000FF'; // Blue color
+  ctx.fill();
+  ctx.closePath();
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
